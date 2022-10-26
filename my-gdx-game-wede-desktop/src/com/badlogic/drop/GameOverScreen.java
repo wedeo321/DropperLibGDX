@@ -39,6 +39,7 @@ public class GameOverScreen implements Screen {
 		ScreenUtils.clear(0, 0, 0.1f, 0);
 		camera.update();
 		game.batch.setProjectionMatrix(camera.combined);
+		//s
 		
 		game.batch.begin();
 		game.font.getData().setScale(4);
