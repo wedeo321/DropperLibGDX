@@ -25,7 +25,7 @@ public class MainMenuScreen implements Screen {
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 400);
 		titleScreenMusic = Gdx.audio.newMusic(Gdx.files.internal("titleScreen.mp3"));
-		//clickSound = Gdx.audio.newSound(Gdx.files.internal("sound.mp4"));
+
 	}
 	
 	public void show() {
@@ -41,9 +41,10 @@ public class MainMenuScreen implements Screen {
 		game.batch.setProjectionMatrix(camera.combined);
 		
 		game.batch.begin();
-		game.font.draw(game.batch, "Welcome to Dropper!", 280, 300);
-		game.font.draw(game.batch, "Click anywhere to begin!", 244, 240);
-		game.batch.draw(raindropImage, 330, 80);
+		game.font.getData().setScale(3);
+		game.font.draw(game.batch, "Welcome to Dropper!", 205, 320);
+		game.font.draw(game.batch, "Click anywhere to begin!", 180, 100);
+		game.batch.draw(raindropImage, 310, 110);
 		game.batch.end();
 		
 		if(Gdx.input.isTouched()) {

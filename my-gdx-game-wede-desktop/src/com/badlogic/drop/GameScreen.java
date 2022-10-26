@@ -144,9 +144,9 @@ public class GameScreen implements Screen {
 		
 		game.batch.begin();
 		
-		game.font.getData().setScale(2);
+		game.font.getData().setScale(4);
 		game.font.draw(game.batch, "Dropper", 300, 390);
-		game.font.draw(game.batch, String.valueOf(points), 390, 340);
+		game.font.draw(game.batch, String.valueOf(points), 390, 310);
 		
 		game.batch.draw(bucketImage, bucket.x, bucket.y);
 		

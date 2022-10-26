@@ -41,6 +41,7 @@ public class GameOverScreen implements Screen {
 		game.batch.setProjectionMatrix(camera.combined);
 		
 		game.batch.begin();
+		game.font.getData().setScale(4);
 		game.font.draw(game.batch, "Game Over!", 244, 240);
 		game.batch.end();
 		
